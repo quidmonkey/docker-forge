@@ -32,3 +32,5 @@ interactive_forge() {
         quidmonkey/forge-interactive:latest /bin/bash
 }
 ```
+
+Both of these are to be used for local development and are designed to have a corresponding forge project mounted. The thinking behind this is to avoid having to manage project dependencies. By mounting any locally installed gem, pip, or npm dependencies directly with the project, forge can run agnostically.
